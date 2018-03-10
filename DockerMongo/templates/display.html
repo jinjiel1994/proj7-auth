@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+</head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+<body>
+
+
+
+<table>
+  <tr>
+    <th>Distance</th>
+    <th>Begin date</th>
+    <th>Begin time</th>
+      <th>Km</th>
+    <th>Open time</th>
+    <th>Close time</th>
+  </tr>
+
+{% for item in items %}
+
+    <tr>
+    <td>{{ item.distance }}</td>
+    <td>{{ item.begin_date }}</td>
+    <td>{{ item.begin_time }}</td>
+        <td>{{ item.km }}</td>
+        <td>{{ item.open }}</td>
+    <td>{{ item.close }}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
+
+
+
+

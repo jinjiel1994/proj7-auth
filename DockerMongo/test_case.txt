@@ -1,0 +1,34 @@
+
+
+#case1:
+	
+Click on submit without having any open/close time
+
+Outcome:
+
+Return error
+
+
+#case1:
+	
+Click on submit with a negative km
+
+Outcome:
+
+Return error
+
+
+
+#case1:
+	
+Click on submit with km 20% longer than elected distance
+
+Outcome:
+
+Return error
+
+
+	
+	
+	
+	

@@ -1,0 +1,11 @@
+web:
+  build: .
+  command: python -u flask_brevets.py
+  ports:
+    - "5000:5000"
+  volumes:
+    - .:/brevets
+  links:
+    - db
+db:
+  image: mongo:3.0.2
